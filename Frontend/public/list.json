@@ -1,0 +1,65 @@
+[
+    {
+        "id":1,
+        "name":"Infosys",
+        "title":"sujal ajay meshram",
+        "price":0,
+        "category":"Online",
+        "image":"/infosys.png",
+        "description":"Boost skills with real-world experience through top internships."
+    },
+    {
+        "id":2,
+        "name":"Google",
+        "title":"bharat narayan sarkar",
+        "price":1000,
+        "category":"Online",
+        "image":"/google.png",
+        "description":"Boost skills with real-world experience through top internships."
+    },
+    {
+        "id":3,
+        "name":"Microsoft",
+        "title":"satyam madhav gaikwad",
+        "price":3000,
+        "category":"Online",
+        "image":"/microsoft.png",
+        "description":"Boost skills with real-world experience through top internships."
+    },
+    {
+        "id":4,
+        "name":"Bajaj",
+        "title":"sujal ajay meshram",
+        "price":0,
+        "category":"Online",
+        "image":"/bajaj.png",
+        "description":"Boost skills with real-world experience through top internships."
+    },
+    {
+        "id":5,
+        "name":"Phonepay",
+        "title":"sujal ajay meshram",
+        "price":0,
+        "category":"Online",
+        "image":"/phonepay.png",
+        "description":"Boost skills with real-world experience through top internships."
+    },
+    {
+        "id":6,
+        "name":"Paytm",
+        "title":"sujal ajay meshram",
+        "price":0,
+        "category":"Online",
+        "image":"/paytm.png",
+        "description":"Boost skills with real-world experience through top internships."
+    },
+    {
+        "id":6,
+        "name":"Pubmatic",
+        "title":"sujal ajay meshram",
+        "price":0,
+        "category":"Online",
+        "image":"/pubmatic.png",
+        "description":"Boost skills with real-world experience through top internships."
+    }
+]
