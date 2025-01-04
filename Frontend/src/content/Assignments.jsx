@@ -2,8 +2,8 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Assignment from "../components/Assignment";
-import Footer from "../components/Footer";
 import Freebook from "../components/Freebook";
+import Footer from "../components/Footer";
 
 function Assignments() {
   return (

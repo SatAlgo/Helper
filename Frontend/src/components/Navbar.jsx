@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import Login from './Login';
+import pic from "../../public/bajaj.png";
 
 function Navbar() {
 
@@ -36,29 +37,30 @@ function Navbar() {
     }, []);
     const navItems = (
         <>
-            <li>
+            <li className="hover:underline transition duration-200">
                 <a href="/">Home</a>
             </li>
-            <li>
-                <a href="/Courses">Tasks</a>
+            <li className="hover:underline transition duration-200">
+                <a href="/Essentials">Essentials</a>
             </li>
-            <li>
-                <a href="/assignments">Web Devlopment</a>
+            <li className="hover:underline transition duration-200">
+                <a href="/Assignments">Assignments</a>
             </li>
-            <li>
-                <a href="/Notes">DSA</a>
+            <li className="hover:underline transition duration-200">
+                <a href="/Notes">Notes</a>
             </li>
-            <li>
+            <li className="hover:underline transition duration-200">
                 <a href="/Mores">More</a>
             </li>
+        
         </>
     );
     return (
         <>
             <div
-                className={`max-w-screen-2xl bg-base-200 dark:bg-slate-800 container mx-auto md:px-10 px-4 dark:bg-slate-900 dark:text-white fixed top-0 left-0 right-0 z-50 ${
+                className={`max-w-screen-2xl container mx-auto md:px-10 px-4 bg-base-200 dark:bg-slate-800 dark:text-white fixed top-0 left-0 right-0 z-50 ${
                     sticky 
-                    ? "sticky-navbar shadow-md bg-base-300 dark:bg-slate-600 dark:text-white duration-300 transition-all ease-in-out"
+                    ? "sticky-navbar shadow-md bg-base-300 dark:bg-slate-700 dark:text-white duration-300 transition-all ease-in-out"
                         : ""
                     }`}
             >
@@ -81,11 +83,12 @@ function Navbar() {
                             </div>
                             <ul
                                 tabIndex={0}
-                                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                className="menu menu-sm dropdown-content bg-base-100 dark:bg-slate-800 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                                 {navItems}
                             </ul>
                         </div>
-                        <a className="text-red-600 text-2xl font-bold cursor-pointer">freelancer's hub</a>
+                        {/* <img src={pic} className="h-12 w-11 rounded-full" alt="" /> */}
+                        <a className="text-red-600 text-2xl font-bold cursor-pointer">SetUp</a>
                     </div>
                     <div className="navbar-end space-x-3">
 
@@ -95,7 +98,7 @@ function Navbar() {
                                 {navItems}
                             </ul>
                         </div>
-                        <div className="hidden md:block">
+                        {/* <div className="hidden md:block">
                             <label className="px-3 py-2 border rounded-md flex items-center gap-2 ">
                                 <input type="text" className="grow outline-none dark:bg-slate-800 dark:text-white" placeholder="Search" />
                                 <svg
@@ -109,7 +112,7 @@ function Navbar() {
                                         clipRule="evenodd" />
                                 </svg>
                             </label>
-                        </div>
+                        </div> */}
                         <div>
                             <label className="swap swap-rotate">
                                 {/* this hidden checkbox controls the state */}
@@ -137,14 +140,14 @@ function Navbar() {
                                 </svg>
                             </label>
                         </div>
-                        <div>
+                        {/* <div>
                             <a className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer"
                                 onClick={() =>
                                     document.getElementById("my_modal_3").showModal()
                                 }
                             >Login</a>
                             <Login/>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
@@ -152,4 +155,4 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default Navbar;

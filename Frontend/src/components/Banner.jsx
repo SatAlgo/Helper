@@ -64,7 +64,7 @@ function Banner() {
       <div className="w-full order-2 md:order-1 md:w-1/2 mt-12 md:mt-24">
         <div className="space-y-8">
           <h1 className="text-4xl font-bold">
-            Welcome to <span className="text-green-500">freelancer's hub</span>
+            Welcome to <span className="text-green-500">SetUp</span>
           </h1>
           <p className="text-xl">
             This platform is designed to connect you 

@@ -2,20 +2,20 @@ import React from "react";
 
 function Footer() {
 
-  
+
   return (
     <div className="">
       <hr />
       <footer className="footer footer-center p-10 text-base-content rounded dark:bg-slate-900 dark:text-white">
         <nav className="grid grid-flow-col gap-4">
           <a href="https://www.linkedin.com/posts/satyam-gaikwad-27a7a724b_python-automation-gamedevelopment-activity-7218149338466705408-QmFg?utm_source=share&utm_medium=member_desktop"
-             target="_blank" 
-             className="link link-hover">About us</a>
+            target="_blank"
+            className="link link-hover">About us</a>
           <a href="https://www.linkedin.com/in/satyam-gaikwad-27a7a724b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-             target="_blank" 
-             className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
+            target="_blank"
+            className="link link-hover">Contact</a>
+          <a href="/JoinUs" className="link link-hover">Join</a>
+          <a href="/SupportUs" className="link link-hover text-teal-400">Support Us</a>
         </nav>
         <nav>
           <div className="grid grid-flow-col gap-4">
@@ -56,7 +56,10 @@ function Footer() {
         </nav>
         <aside>
           <p>
+            {/* Created by Satyam Gaikwad
+            <br/> */}
             Copyright © {new Date().getFullYear()} - All right reserved
+            
           </p>
         </aside>
       </footer>

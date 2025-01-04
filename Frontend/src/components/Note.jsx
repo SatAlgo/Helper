@@ -3,10 +3,10 @@ import Cards from "./Cards";
 import list from "../../public/list.json";
 import { Link } from "react-router-dom";
 
-function Assignments() {
+function Note() {
   // Filter out items with category "PPT" and "PDF"
-  const assignFirst = list.filter((item) => item.category === "Free");
-  const assignSecond = list.filter((item) => item.category === "Free");
+  const assignFirst = list.filter((item) => item.category === "Notes1");
+  const assignSecond = list.filter((item) => item.category === "Notes2");
 
   // State to manage visibility of sections
   const [showFirstSection, setShowFirstSection] = useState(true);
@@ -17,13 +17,13 @@ function Assignments() {
     <>
       <hr />
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
-        <div className="mt-28 items-center justify-center text-center">
+        <div className="mt-6 items-center justify-center text-center">
           <h1 className="text-2xl md:text-4xl">
             Notes: Your Key to{" "}
             <span className="text-green-400">Academic Success</span>
           </h1>
-          <p className="mt-12">
-            Here, you'll find a comprehensive collection of assignments designed
+          <p className="mt-6">
+            Here, you'll find a comprehensive collection of Note designed
             to support your learning and academic journey. Whether you're
             looking for specific topics or need help with different subjects,
             we've got you covered.
@@ -88,7 +88,7 @@ function Assignments() {
               Notes for <span className="text-yellow-400">First </span>
               year :
             </h1>
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div className="mt-3 grid grid-cols-1 md:grid-cols-4 gap-4">
               {assignFirst.map((item) => (
                 <Cards key={item.id} item={item} />
               ))}
@@ -103,7 +103,7 @@ function Assignments() {
               Notes for <span className="text-yellow-500">Second </span>
               year :
             </h1>
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div className="mt-3 grid grid-cols-1 md:grid-cols-4 gap-4">
               {assignSecond.map((item) => (
                 <Cards key={item.id} item={item} />
               ))}
@@ -128,4 +128,4 @@ function Assignments() {
   );
 }
 
-export default Assignments;
+export default Note;

@@ -5,7 +5,7 @@ import More from "../components/More";
 import Footer from "../components/Footer";
 
 
-function mores() {
+function Mores() {
   return (
     <>
       <Navbar />
@@ -16,11 +16,8 @@ function mores() {
         <More />
       </div>     
       <Footer />
-      <div>
-        Checking
-      </div>
     </>
   );
 }
 
-export default mores;
+export default Mores;
